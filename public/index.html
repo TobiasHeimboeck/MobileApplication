@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Welcome to the NYSL web app.</title>
+    <link rel="apple-touch-icon" href="img/nysl_logo.png">
+    <link rel="icon" href="img/nysl_logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div id="main">
+
+        <sidebar></sidebar>
+
+        <!-- DEFAULT VIEW -->
+        <div id="default">
+
+            <navbar title="Home"></navbar>
+
+            <div class="middle-circle">
+                <div class="selector-bar">
+                    <p> <a onclick="main.openPage('default')" href="#"> <i class="fa fa-home selector-icon"></i> </a>
+                    </p>
+                    <p> <a onclick="main.openPage('schedule')" href="#"> <i class="fa fa-clock-o selector-icon"></i>
+                        </a> </p>
+                    <p> <a onclick="main.openPage('locations')" href="#"> <i class="fa fa-location-arrow selector-icon"></i>
+                        </a> </p>
+                    <p> <a onclick="main.openPage('chat')" href="#"> <i class="fa fa-comments selector-icon"></i> </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- SCHEDULE VIEW -->
+        <div id="schedule">
+
+            <filter_icon title="Schedule"></filter_icon>
+
+            <table class="gamesTable">
+                <tr>
+                    <th>Day</th>
+                    <th>Teams</th>
+                    <th>Location</th>
+                    <th>Times</th>
+                </tr>
+                <tr v-for="game in games">
+                    <td>{{game.day}}</td>
+                    <td>{{game.teams}}</td>
+                    <td>{{game.location}}</td>
+                    <td>{{game.time}}</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- FILTER VIEW -->
+        <div id="filter">
+            
+            <div class="topnav">
+                <a class="icon" onclick="openNav()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a style="float:right;" class="filterIcon" onclick="main.openPage('schedule')">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+                <p>Filter</p>
+            </div>
+
+            <div class="filter-teams">Select a team to filter</div>
+            <div id="teamCards"></div>
+        </div>
+
+        <!-- LOCATIONS VIEW -->
+        <div id="locations">
+            
+            <navbar title="Locations"></navbar>
+
+            <ul class="location-list">
+                <li v-for="location in locations">
+                    <div class="location-header"> {{ location.name }} </div>
+                    <div class="location-footer">
+                        <iframe :src="location.url" frameborder="0" name="iframe_a"></iframe>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- LOGIN VIEW -->
+        <div id="login">
+
+            <navbar title="Chat Login"></navbar>
+
+            <div class="login-container">
+                <button id="googleLogin" @click="login">
+                    <i class="fa fa-google" aria-hidden="true"></i>
+                    Login with Google
+                </button>
+            </div>
+        </div>
+        
+        <!-- CHAT VIEW -->
+        <div id="chat">
+   
+            <navbar_chat title="Chat"></navbar_chat>
+            
+            <div id="show_chat">
+                
+            </div>
+            
+            <div class="chat">
+                <input id="chat_input" type="text" name="chatbox" placeholder="Type a message here.">
+                <button @click="postMessage"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+    <script>
+        let config = {
+            apiKey: "AIzaSyA3DZGgQH7eso_XxGiDVWcv9CkB6p92dNE",
+            authDomain: "mobilewebapplication-6b123.firebaseapp.com",
+            databaseURL: "https://mobilewebapplication-6b123.firebaseio.com",
+            projectId: "mobilewebapplication-6b123",
+            storageBucket: "mobilewebapplication-6b123.appspot.com",
+            messagingSenderId: "809021872304"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

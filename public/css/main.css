@@ -1,0 +1,401 @@
+/* ============ BODY SECTION ============ */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: rgb(75, 207, 75);
+}
+
+/* ============ TOP NAVBAR ============ */
+
+.topnav {
+    overflow: hidden;
+    background-color: #269e1e;
+    color: white;
+    font-size: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* ============ GAME SCHEDULE VIEW ============ */
+
+.gamesTable {
+    margin-top: 48px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    height: 30px;
+    padding: 8px;
+    text-align: center;
+}
+
+tr {
+    background-color: #42cc2f;
+}
+
+tr:nth-child(even) {
+    background-color: #54e044;
+}
+
+th {
+    background-color: rgb(75, 77, 75);
+    color: white;
+}
+
+/* ============ SIDE NAVBAR ============ */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #ffffff;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sideHeader {
+    height: 150px;
+    background-color: rgb(221, 217, 217);
+    margin-top: -100px;
+}
+
+.sideFooter {
+    height: 150px;
+    background-color: rgb(221, 217, 217);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+}
+
+.sideFooter p {
+    text-align: center;
+    font-size: 15px;
+}
+
+.sideFooter img {
+    height: 80px;
+    width: 80px;
+    margin-left: 80px;
+    padding-top: 15px;
+    color: white;
+}
+
+.logo {
+    height: 80px;
+    width: 80px;
+    margin-top: 55px;
+    margin-left: 80px;
+}
+
+.sideNavigation {
+    margin-top: 50px;
+}
+
+.navi a {
+    color: white;
+}
+
+.navi a:active {
+    color: white;
+}
+
+.navi {
+    color: white;
+    background-color: rgb(231, 224, 224);
+    height: 50px;
+    padding-top: 15px;
+}
+
+.selected {
+    background-color: rgb(163, 151, 151);
+    height: 50px;
+    padding-top: 15px;
+    color: white;
+}
+
+#main {
+    transition: margin-left .5s;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/* ============ FILTER VIEW ============ */
+
+.filter-teams {
+    margin-top: 48px;
+    background-color: rgb(75, 77, 75);
+    color: white;
+    padding: 8px;
+    text-align: center;
+}
+
+.frontPage {
+    margin: 10px;
+    float: left;
+    height: 100px;
+    width: 100px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    background-color: green;
+}
+
+.frontPage2 {
+    margin: 10px;
+    height: 40px;
+    width: 90%;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    background-color: green;
+}
+
+/* ============ HOME VIEW ============ */
+
+.middle-circle {
+    background: url("../img/nysl_logo.png");
+    background-size: 200px 200px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border-radius: 100px;
+    margin: 300px auto;
+}
+
+.selector-bar {
+    height: 54px;
+    width: 100%;
+    background-color: rgb(16, 128, 16);
+}
+
+.selector-icon {
+    float: left;
+    margin: 10px;
+    font-size: 33px;
+    color: white;
+}
+
+.selector-icon:hover {
+    background-color: #269e1e;
+    color: lightgreen;
+}
+
+.home-icon {
+    font-size: 70px;
+    margin: auto;
+    background-color: darkgreen;
+    height: 80px;
+    width: 80px;
+    border-radius: 100px;
+}
+
+.home-icon i {
+    color: rgb(21, 160, 21);
+}
+
+.location-list {
+    list-style: none;
+    margin-top: 48px;
+    padding: 0;
+}
+
+.location-header {
+    background-color: rgb(73, 224, 73);
+    height: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.location-footer iframe {
+    width: 100%;
+    height: 200px;
+}
+
+/* ============ LOGIN VIEW ============ */
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#googleLogin {
+    width: 200px;
+    height: 50px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30%;
+}
+
+#googleLogin:hover {
+    background-color: darkred;
+    color: red;
+}
+
+/* ============ CHAT VIEW ============ */
+
+#pic {
+  padding: 14px 16px;
+  float: right;
+  border-radius: 100px;
+  height: 20px;
+  width: 20px;
+}
+
+.chat {
+  position: fixed; 
+  left: 0px;
+  bottom: 0px; 
+  height: 64px;
+  width: 100%; 
+  background: #E0E0E0;
+}
+
+#chat_input {
+  width: 75%;
+  height: 80%;
+  border-radius: 10px;
+  border: none;
+  margin: 6px;
+}
+
+#chat button {
+  width: 50px;
+  height: 80%;
+  border-radius: 100px;
+  border: none;
+  margin: 5px;
+  background-color: green;
+  color: lightgreen;
+  font-size: 20px;
+}
+
+.container-left, .container-right {
+  background-color: white;
+  padding: 10px;
+  margin: 10px 0;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.container-left {
+    background-color: lightgreen;
+}
+
+.container-left::after, .container-right::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container-left img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 100px;
+}
+
+.container-right img {
+  float: right;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 100px;
+}
+
+#show_chat {
+  height: 100vh;
+  width: 100%;
+  overflow: auto;
+  padding-bottom: 60px;
+  padding-left: 10px;
+  background-color: lightgray;
+}
+
+.container {
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+}
+
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  float: left;
+  color: #aaa;
+}

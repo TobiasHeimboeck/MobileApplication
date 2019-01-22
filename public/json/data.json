@@ -1,0 +1,217 @@
+{
+    "games": [
+        {
+            "month": "september",
+            "day": "9/01",
+            "teams": "U1 and U4",
+            "teamsArray": [
+                "U1",
+                "U4"
+            ],
+            "location": "AJ Katzenmaier",
+            "time": "9.30 a.m."
+        },
+        {
+            "month": "september",
+            "day": "9/01",
+            "teams": "U3 and U4",
+            "teamsArray": [
+                "U3",
+                "U4"
+            ],
+            "location": "Greenbay",
+            "time": "1:00 p.m."
+        },
+        {
+            "month": "september",
+            "day": "9/08",
+            "teams": "U5 and U6",
+            "teamsArray": [
+                "U5",
+                "U6"
+            ],
+            "location": "Howard A Yeager",
+            "time": "1:00 p.m."
+        },
+        {
+            "month": "september",
+            "day": "9/08",
+            "teams": "U6 and U1",
+            "teamsArray": [
+                "U6",
+                "U1"
+            ],
+            "location": "Marjorie P Hart",
+            "time": "1:00 p.m."
+        },
+        {
+            "month": "september",
+            "day": "9/15",
+            "teams": "U2 and U4",
+            "teamsArray": [
+                "U2",
+                "U4"
+            ],
+            "location": "North",
+            "time": "9.30 a.m."
+        },
+        {
+            "month": "september",
+            "day": "9/15",
+            "teams": "U3 and U5",
+            "teamsArray": [
+                "U3",
+                "U5"
+            ],
+            "location": "AJ Katzenmaier",
+            "time": "1:00 p.m."
+        },
+        {
+            "month": "september",
+            "day": "9/22",
+            "teams": "U1 and U3",
+            "teamsArray": [
+                "U1",
+                "U3"
+            ],
+            "location": "South",
+            "time": "9.30 a.m."
+        },
+        {
+            "month": "september",
+            "day": "9/22",
+            "teams": "U2 and U6",
+            "teamsArray": [
+                "U2",
+                "U6"
+            ],
+            "location": "Howard A Yeager",
+            "time": "1:00 p.m."
+        },
+        {
+            "month": "september",
+            "day": "9/29",
+            "teams": "U4 and U5",
+            "teamsArray": [
+                "U4",
+                "U5"
+            ],
+            "location": "Greenbay",
+            "time": "9.30 a.m."
+        },
+        {
+            "month": "october",
+            "day": "10/06",
+            "teams": "U2 and U5",
+            "teamsArray": [
+                "U2",
+                "U5"
+            ],
+            "location": "Marjorie P Hart",
+            "time": "9.30 a.m."
+        },
+        {
+            "month": "october",
+            "day": "10/06",
+            "teams": "U1 and U6",
+            "teamsArray": [
+                "U1",
+                "U6"
+            ],
+            "location": "South",
+            "time": "1:00 p.m."
+        },
+        {
+            "month": "october",
+            "day": "10/13",
+            "teams": "U3 and U4",
+            "teamsArray": [
+                "U3",
+                "U4"
+            ],
+            "location": "Howard A Yeager",
+            "time": "1:00 p.m."
+        },
+        {
+            "month": "october",
+            "day": "10/13",
+            "teams": "U5 and U1",
+            "teamsArray": [
+                "U5",
+                "U1"
+            ],
+            "location": "Greenbay",
+            "time": "1:00 p.m."
+        },
+        {
+            "month": "october",
+            "day": "10/20",
+            "teams": "U6 and U3",
+            "teamsArray": [
+                "U6",
+                "U3"
+            ],
+            "location": "North",
+            "time": "9.30 a.m."
+        },
+        {
+            "month": "october",
+            "day": "10/20",
+            "teams": "U2 and U4",
+            "teamsArray": [
+                "U2",
+                "U4"
+            ],
+            "location": "Marjorie P Hart",
+            "time": "1:00 p.m."
+        },
+        {
+            "month": "october",
+            "day": "10/27",
+            "teams": "U3 and U1",
+            "teamsArray": [
+                "U3",
+                "U1"
+            ],
+            "location": "AJ Katzenmaier",
+            "time": "9.30 a.m."
+        },
+        {
+            "month": "october",
+            "day": "10/27",
+            "teams": "U5 and U6",
+            "teamsArray": [
+                "U5",
+                "U6"
+            ],
+            "location": "Howard A Yeager",
+            "time": "1:00 p.m."
+        }
+    ],
+    "locations": [
+        {
+            "name": "AJ Katzenmaier Elementary",
+            "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5939.308118921026!2d-87.63342776849322!3d41.90029639276911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34e07f6bac3%3A0x68a82e5d59952c86!2s24+W+Walton+St%2C+Chicago%2C+IL+60610%2C+Verenigde+Staten!5e0!3m2!1snl!2snl!4v1542625157492"
+        },
+        {
+            "name": "Greenbay Elementary",
+            "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.025884368862!2d-87.64002798455778!3d41.91380227921926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34073f306a3%3A0x9e1726bbf8f23f0e!2s1734+N+Orleans+St%2C+Chicago%2C+IL+60614%2C+Verenigde+Staten!5e0!3m2!1snl!2snl!4v1542626274467"
+        },
+        {
+            "name": "Howard A Yeager Elementary",
+            "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.5854973847386!2d-87.66511458435056!3d41.92326857056499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd2e37f9b8d2d%3A0x62ad8b907dd755d6!2s2245+N+Southport+Ave%2C+Chicago%2C+IL+60614%2C+Verenigde+Staten!5e0!3m2!1snl!2snl!4v1542626393112"
+        },
+        {
+            "name": "Marjorie P Hart Elementary",
+            "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.2917289531447!2d-87.64808628435041!3d41.92958227016948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd30f2630e551%3A0x3e719e44a5cef714!2s2625+N+Orchard+St%2C+Chicago%2C+IL+60614%2C+Verenigde+Staten!5e0!3m2!1snl!2snl!4v1542626459783"
+        },
+        {
+            "name": "North Elementary",
+            "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.33630254201!2d-87.64835588435095!3d41.90712867157581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd33af13a8945%3A0xb6ad1ec2b6f379ba!2s1409+N+Ogden+Ave%2C+Chicago%2C+IL+60610%2C+Verenigde+Staten!5e0!3m2!1snl!2snl!4v1542626523045"
+        },
+        {
+            "name": "South Elementary",
+            "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.7477648266376!2d-87.65355538435067!3d41.91978077078317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd3196fb41dc7%3A0x970be7f7d6336df5!2s2101+N+Fremont+St%2C+Chicago%2C+IL+60614%2C+Verenigde+Staten!5e0!3m2!1snl!2snl!4v1542626581964"
+        }
+    ]
+}
