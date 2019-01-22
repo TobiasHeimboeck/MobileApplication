@@ -322,11 +322,19 @@ th {
   font-size: 20px;
 }
 
-.container-left, .container-right {
+.container-left {
   background-color: white;
   padding: 10px;
   margin: 10px 0;
-  width: 90%;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.container-right {
+  background-color: white;
+  padding: 10px;
+  margin: 10px 0;
+  width: 80%;
   border-radius: 10px;
 }
 

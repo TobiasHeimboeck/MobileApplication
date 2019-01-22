@@ -253,10 +253,11 @@ const main = new Vue({
                 postedTime: main.getTime()
             }
             
-            if(text !== "") {
+            if(text !== undefined) {
                 let newPostKey = firebase.database().ref().child("main").push().key;
                 let updates = {};
                 updates[newPostKey] = post;
+                
                 return firebase.database().ref("main").update(updates);
             }
         },
