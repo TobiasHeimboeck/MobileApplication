@@ -97,6 +97,29 @@ th {
     margin-top: -100px;
 }
 
+@media screen and (orientation:landscape) {
+    .sideHeader {
+        margin-top: -15px !important;
+        height: 97px !important;
+    }
+    
+    .logo {
+        height: 70px !important;
+        width: 70px !important;
+        margin-top: 20px !important;
+        margin-left: 80px;
+    }
+    
+    .navi {
+        height: 20px !important;
+        padding-bottom: 10px !important;
+    }
+
+    .sideFooter {
+        display: none !important;
+    }
+}
+
 .sideFooter {
     height: 150px;
     background-color: rgb(221, 217, 217);
@@ -326,7 +349,7 @@ th {
   background-color: white;
   padding: 10px;
   margin: 10px 0;
-  width: 80%;
+  max-width: 55%;
   border-radius: 10px;
 }
 
@@ -334,8 +357,10 @@ th {
   background-color: white;
   padding: 10px;
   margin: 10px 0;
-  width: 80%;
+  max-width: 55%;
   border-radius: 10px;
+  margin-left: 40%;
+  margin-right: 10px;
 }
 
 .container-left {
@@ -368,6 +393,7 @@ th {
   height: 100vh;
   width: 100%;
   overflow: auto;
+  margin-top: 50px;
   padding-bottom: 60px;
   padding-left: 10px;
   background-color: lightgray;

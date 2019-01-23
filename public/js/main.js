@@ -14,9 +14,8 @@ Vue.component("sidebar", {
         <p class="navi"> <a href="#" onclick="main.openPage('chat'), closeNav()"> <i class="fa fa-comments"> </i> Chat</a> </p>
     </div>
     <div class="sideFooter">
-        <img v-if="this.loggedIn === true" :src="main.profilePicture" alt="User placeholder">
+        <img v-if="this.loggedIn == true" :src="main.profilePicture" alt="User placeholder">
         <img v-else="this.loggedIn === false" src="img/user.png" alt="User">
-        <p>Tobias</p>
     </div>
 </div>`
 });
@@ -104,29 +103,26 @@ const main = new Vue({
             let state = this.filterState;
             let games = [];
 
-            if (state === "All") {
+            if (state === "All")
                 games = this.allGames;
-            } else {
+            else
                 games = this.filterGames(state);
-            }
 
             return games;
         },
         hideAllPages() {
             let pageIDs = ["schedule", "filter", "locations", "login", "chat"];
 
-            for (let i = 0; i < pageIDs.length; i++) {
+            for (let i = 0; i < pageIDs.length; i++)
                 this.loadPage(pageIDs[i], false);
-            }
 
             this.openPage("default");
         },
         loadTeamButtons() {
             let teams = ["U1", "U2", "U3", "U4", "U5", "U6"];
 
-            for (let i = 0; i < teams.length; i++) {
+            for (let i = 0; i < teams.length; i++)
                 this.createTeamButton(teams[i]);
-            }
 
             this.createTeamButton("All");
 
@@ -198,20 +194,18 @@ const main = new Vue({
             }
         },
         loadPage(pageID, value) {
-            if (value) {
+            if (value)
                 document.getElementById(pageID).style.display = "block";
-            } else {
+            else
                 document.getElementById(pageID).style.display = "none";
-            }
         },
         filterGames(filterBy) {
             let responseArray = [];
 
             for (let i = 0; i < this.allGames.length; i++) {
                 const currentGame = this.allGames[i];
-                if (this.arrayContains(filterBy, currentGame.teamsArray)) {
+                if (this.arrayContains(filterBy, currentGame.teamsArray))
                     responseArray.push(currentGame);
-                }
             }
 
             return responseArray;
@@ -253,26 +247,31 @@ const main = new Vue({
                 postedTime: main.getTime()
             }
             
-            if(text !== undefined) {
+            if(text !== "") {
                 let newPostKey = firebase.database().ref().child("main").push().key;
                 let updates = {};
                 updates[newPostKey] = post;
                 
                 return firebase.database().ref("main").update(updates);
+            } else {
+                console.log("text is empty");
             }
         },
         getTime() {
             let date = new Date();
             
-            let minutes;
+            let hours = date.getHours(), minutes = date.getMinutes();
             
-            if(date.getMinutes() < 10) {
+            if(date.getHours() < 10 && date.getMinutes() < 10) {
+                hours = '0' + date.getHours();
                 minutes = '0' + date.getMinutes();
-            } else {
-                minutes = date.getMinutes();
+            } else if(date.getMinutes() < 10) {
+                minutes = '0' + date.getMinutes();
+            } else if (date.getHours() < 10) {
+                hours = '0' + date.getHours();
             }
             
-            return `${date.getHours()}:${minutes}`;
+            return `${hours}:${minutes}`;
         },
         getPosts() {
             
@@ -287,11 +286,10 @@ const main = new Vue({
                     
                     let box = document.createElement("div");
                     
-                    if(messages[key].sender === main.userName) {
+                    if(messages[key].sender === main.userName)
                         box.className = "container-left";
-                    } else {
+                    else
                         box.className = "container-right";
-                    }
                     
                     let img = document.createElement("img");
                     img.src = messages[key].senderProfilePicture;
@@ -302,11 +300,10 @@ const main = new Vue({
 
                     let time = document.createElement("span");
                     
-                    if(messages[key].sender === main.userName) {
+                    if(messages[key].sender === main.userName)
                         time.className = "time-right";
-                    } else {
+                    else
                         time.className = "time-left";
-                    }
                                         
                     time.innerHTML = messages[key].postedTime;
 
