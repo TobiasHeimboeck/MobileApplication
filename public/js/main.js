@@ -14,7 +14,7 @@ Vue.component("sidebar", {
         <p class="navi"> <a href="#" onclick="main.openPage('chat'), closeNav()"> <i class="fa fa-comments"> </i> Chat</a> </p>
     </div>
     <div class="sideFooter">
-        <img v-if="this.loggedIn == true" :src="main.profilePicture" alt="User placeholder">
+        <img v-if="this.loggedIn == true" :src="profilePicture" alt="User placeholder">
         <img v-else="this.loggedIn === false" src="img/user.png" alt="User">
     </div>
 </div>`
